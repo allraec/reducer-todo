@@ -24,6 +24,7 @@ function App() {
         <button onClick={handleSubmit}>Add</button>
       </div>
       <TodoList todo={todo} dispatch={dispatch} />
+      <button onClick={() => dispatch({type: "CLEAR_TODO"})}>Clear Completed</button>
     </div>
   );
 }
